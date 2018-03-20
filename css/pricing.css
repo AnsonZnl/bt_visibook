@@ -15,6 +15,13 @@
 strong{
     color: #fff!important;
 }
+
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 0px 8px rgba(0, 0, 0, 0.28);
+    border-bottom: solid 1px #ccc;
+}
 .pl0{
     padding-left: 0!important;
 }
@@ -22,7 +29,7 @@ strong{
     padding-right: 0!important;
 }
 .h-100 {
-    height: 80vh!important;
+    height: 100vh!important;
 }
 .btn{
     padding: 10px 15px;
@@ -60,7 +67,6 @@ strong{
     border-bottom: 1px solid #e0ddd3;
     padding: 15px;
     font-size: 18px;
-    font-weight: 300;
     color: #615e59;
     text-align: center;
     font-weight: bold;
@@ -76,4 +82,54 @@ strong{
 }
 .plus {
     background-color: #41aecc;
+}
+.collapse{
+    position: relative;
+}
+.navbar-nav{
+    position: absolute;
+    right:0;
+}
+.imgwh{
+    width: 16px;
+    height: 12px;
+}
+.btn:hover{
+    color: #615e59;
+    background: #ddd;
+}
+@media (max-width: 575.98px) {
+    .navbar{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .collapse{
+        position: inherit;
+    }
+    .navbar-nav{
+        position: inherit;
+    }
+    .bg-yellow .pt-6{
+        padding-top: 0!important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .collapse{
+        position: inherit;
+    }
+    .navbar-nav{
+        position: inherit;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+    .collapse{
+        position: inherit;
+    }
+    .navbar-nav{
+        position: inherit;
+    }
 }

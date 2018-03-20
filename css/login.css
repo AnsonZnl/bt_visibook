@@ -1,0 +1,75 @@
+
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 0px 8px rgba(0, 0, 0, 0.28);
+    border-bottom: solid 1px #ccc;
+}
+h6 {
+    position: relative;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.content-area {
+    padding: 70px 0 0 0;
+    background-color: #f0eee9;
+    min-height: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.sigin-container {
+    background-color: #f0eee9;
+    padding-top: 50px;
+}
+
+.panel.my-panel {
+    background-color: white;
+    max-width: 520px;
+    padding: 35px;
+    margin: auto auto 25px auto;
+    border: 1px solid silver;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 0 #c7c3b9;
+    text-align: center;
+}
+.btn{
+    width: 100%;
+    background: -webkit-linear-gradient(top, #edbd2d, #e3b52b);
+    background-color: #edbd2d;
+    outline: none;
+}
+label{
+    text-align: left;
+    display: block;
+}
+.btn-default{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.color-000{
+    color: #000!important;
+}
+@media (max-width: 575.98px) {
+    .navbar{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .content-area {
+        padding: 0;
+    }
+    .panel.my-panel {
+        border-radius: 0 !important;
+    }
+    .btn-default{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
