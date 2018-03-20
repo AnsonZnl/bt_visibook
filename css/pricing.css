@@ -4,6 +4,17 @@
 .color-fff{
     color: #fff!important;
 }
+.fz30{
+    font-size: 30px!important;
+    color: #fff!important;
+}
+.fz030{
+    font-size: 30px!important;
+    color: #000!important;
+}
+strong{
+    color: #fff!important;
+}
 .pl0{
     padding-left: 0!important;
 }
@@ -12,6 +23,18 @@
 }
 .h-100 {
     height: 80vh!important;
+}
+.btn{
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: normal;
+    background: -webkit-linear-gradient(top, #fff, #f5f4f0);
+    background-color: #fff;
+    border: #c7c3b9 1px solid;
+    outline: none;
+    line-height: 1;
+    color: #615e59;
+    border-radius: 5px;
 }
 .bb0{
     margin-bottom: 0!important;

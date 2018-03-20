@@ -13,79 +13,114 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pricing.css">
     <style>
-    .navbar{
-    background-color: #ffffff;
-    padding: 10px 0;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 0px 8px rgba(0, 0, 0, 0.28);
-    border-bottom: solid 2px #ccc;
-    }
+        .navbar {
+            background-color: #ffffff;
+            padding: 10px 0;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 0px 8px rgba(0, 0, 0, 0.28);
+            border-bottom: solid 2px #ccc;
+        }
 
-     .content-area {
-    padding: 70px 0 0 0;
-    background-color: #f0eee9;
-    min-height: 100%;
-    height: 100%;
-    position: relative;
-}
-.sigin-container{
-    background-color: #f0eee9;
-    padding-top: 50px;
-    }
-    .panel.my-panel {
-    margin-bottom: 21px;
-    background-color: white;
-    text-align: left;
-    max-width: 520px;
-    padding: 35px;
-    margin: auto auto 25px auto;
-    border: 1px solid silver;
-    border-radius: 6px;
-    box-shadow: 0 1px 3px 0 #c7c3b9;
-    text-align: center;
-}
-.dialog-centered h6.line-behind:before, .dialog-centered h6.line-behind:after {
-    position: absolute;
-    top: 51%;
-    overflow: hidden;
-    width: 50%;
-    height: 1px;
-    content: '\a0';
-    background-color: #ecf0f1;
-}
-.dialog-centered h6.line-behind:before, .dialog-centered h6.line-behind:after {
-    position: absolute;
-    top: 51%;
-    overflow: hidden;
-    width: 50%;
-    height: 1px;
-    content: '\a0';
-    background-color: #ecf0f1;
+        .content-area {
+            padding: 70px 0 0 0;
+            background-color: #f0eee9;
+            min-height: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .sigin-container {
+            background-color: #f0eee9;
+            padding-top: 50px;
+        }
+
+        .panel.my-panel {
+            margin-bottom: 21px;
+            background-color: white;
+            text-align: left;
+            max-width: 520px;
+            padding: 35px;
+            margin: auto auto 25px auto;
+            border: 1px solid silver;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px 0 #c7c3b9;
+            text-align: center;
+        }
+
+        h6 {
+            position: relative;
+            color: #ccc;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+        .btn{
+            width: 100%;
+            background: -webkit-linear-gradient(top, #edbd2d, #e3b52b);
+            background-color: #edbd2d;
+            outline: none;
+        }
+        label{
+            text-align: left;
+            display: block;
+        }
+        .btn-default{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 17px;
+        }
+
+        .color-000{
+            color: #000!important;
+        }
+        @media (max-width: 575.98px) {
+            .content-area {
+                padding: 0;
+            }
+            .panel.my-panel {
+                border-radius: 0 !important;
+            }
+        }
     </style>
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-xl navbar-light bg-faded">
         <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
         </div>
     </nav>
 </header>
 <div class="content-area">
     <div class="signin-container">
-        <div class="panel dialog-centered my-panel auth-inputs-panel"> 
-            <button class="btn google-signin-btn btn-default google-login"><span>Sign in with Google</span></button>
+        <div class="panel dialog-centered my-panel auth-inputs-panel">
+            <button class="btn google-signin-btn btn-default google-login" style="background: #fff;">
+                <img class="mr10" src="images/google-g-transparent.png" alt="">
+                <span class="color-000">Sign in with Google</span>
+            </button>
             <h6 class="line-behind">or with email</h6>
-            <form action="">
-                
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-default colo-fff">login</button>
+                <br>
+                <p><a href="">Forgot password?</a></p>
             </form>
-
 
         </div>
     </div>
 </div>
 </body>
-    <script src="js/bootstrap.min.js"> </script>
-    <script src="js/jquery-3.3.1.min.js"> </script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
